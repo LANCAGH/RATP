@@ -1,0 +1,45 @@
+S3:
+  bucket: p-idfm-pipeline
+  chemins_dossiers:
+    bronze: bronze/
+    silver: silver/
+    gold: gold/
+    profiling: profiling/
+    quality_reports: quality_reports/
+    pipeline_metadata: pipeline_metadata/
+    athena_results: athena_results/
+  region: eu-west-3
+
+Lambda: 
+  fonction: p-idfm-pipeline-fetch-api
+  timeout: 300 #en secondes
+  memoire_allouee: 256 #à modifier si besoin
+  URL_API: https://data.iledefrance-mobilites.fr/api/explore/v2.1/catalog/datasets/histo-validations-reseau-ferre/exports/csv
+
+Glue: 
+  nom_du_job: glue-transf-bronzetosilver
+  timeout: 10 #en minutes
+  type_worker: G.1X
+  nb_workers: 2 #minimum avec Spark
+  version: 5.0 #je prends pas la dernière version, adaptée pour python 3.11
+
+Athena: 
+  nom: athena-idfm
+  chemin_output: athena_results/
+
+Pipeline: 
+  environnement: dev
+  periode: 2015-2024
+  filtre_ZdAtype: #liste d'éléments
+    - metroStation
+    - railStation
+    - liftStation
+
+#rien à stocker pour l'instant : 
+
+#Parameter Store:
+  #nom: xxx
+
+
+
+
