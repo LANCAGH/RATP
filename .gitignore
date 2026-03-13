@@ -4,7 +4,5 @@ __pycache__/
 *.csv
 *.parquet
 .env
-data/raw/*
-data/processed/*
 environment.yml
 venv/

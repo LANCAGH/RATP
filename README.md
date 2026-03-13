@@ -24,6 +24,7 @@ s3://p-idfm-pipeline/
 ├── gold/            ← score de priorité PMR, prêt pour le dashboard
 ├── profiling/       ← rapports d'exploration de la donnée (librairie y-data)
 ├── quality_reports/ ← résultats des tests qualité à chaque run
+├── athena_results/ ← résultats athena
 └── pipeline_metadata/ ← checkpoints et métadonnées de run
 ```
 
