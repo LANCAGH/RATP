@@ -1,4 +1,4 @@
-# Projet RATP 
+# Projet IDFM
 ## Hugo LANCA
 
 **Ce README.md est susceptible d'évoluer à mesure que je complète le projet. Voici un résumé complet des différentes prises de décision.**
