@@ -1,7 +1,7 @@
 # Projet RATP 
 ## Hugo LANCA
 
-**Ce Read.me est susceptible d'évoluer à mesure que je complète le projet. Voici un résumé complet des différentes prises de décision.**
+**Ce README.md est susceptible d'évoluer à mesure que je complète le projet. Voici un résumé complet des différentes prises de décision.**
 ---
 
 ## Contexte métier
